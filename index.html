@@ -1,134 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Gabriel Walton | Developer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work-history">Work History</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#mailing-address">Mailing Address</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work-history">Work History</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#mailing-address">Mailing Address</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
     </nav>
     <main>
-        <h1>Portfolio</h1>
+      <h1>Portfolio</h1>
 
-        <section>
-            <h2>Gabriel (Gabe) Walton</h2>
+      <section>
+        <h2>Gabriel (Gabe) Walton</h2>
+        <p>
+          Application Developer
+        </p>
+        <dl>
+          <dt>Website</dt>
+          <dd>devbygabe.me</dd>
+          <dt>Twitter</dt>
+          <dd>
+            <a href="https://www.twitter.com" target="_blank">@gabewalt</a>
+          </dd>
+        </dl>
+      </section>
+
+      <article id="about-me">
+        <header>
+          <h2>About Me</h2>
+        </header>
+        <p>
+          Hi! I'm Gabriel. I'm a Manchester based developer. I'm
+          <em>happy</em> to have you on my portfolio page. Why don't you stick
+          around and take a look at my projects?
+        </p>
+      </article>
+
+      <section id="services">
+        <h2>Services</h2>
+        <ul>
+          <li>Front-end Development</li>
+          <li>Code Optimisations</li>
+          <li>Bug Fixes</li>
+          <li>Web Design</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HMTL</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Figma</li>
+        </ul>
+      </section>
+
+      <section id="work-history">
+        <h2>Work History</h2>
+        <table>
+          <thead>
+            <th>Role</th>
+            <th>Company</th>
+            <th>Years</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>QA Team (secondment)</td>
+              <td>Paragon CC</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Print Developer</td>
+              <td>Paragon CC</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>HR Systems Analyst</td>
+              <td>Marks &amp; Spencer</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total</td>
+              <td>9</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="projects">
+        <!-- TODO: add images -->
+        <h2>Projects</h2>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+          <p>I <strong>love</strong> Gabriel's work!</p>
+        </blockquote>
+        <p>- Customer #1</p>
+        <blockquote>
+          <p>Gabriel's work <strong>helped</strong> us greatly.</p>
+        </blockquote>
+        <p>- Customer #2</p>
+      </section>
+
+      <section id="mailing-address">
+        <h2>Mailing Address</h2>
+        <address>
+          Some St,<br />
+          Somewhere,<br />
+          Salford M6
+        </address>
+      </section>
+
+      <section id="contact-me">
+        <h2>Contact Me</h2>
+        <form action="" method="POST">
+          <p>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="why-contacting">Why Contacting</label>
+            <select name="why-contacting" id="whi-contacting">
+              <option value="interview">Job Interview</option>
+              <option value="freelance">Freelance Offer</option>
+            </select>
+          </p>
+          <p>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows="3"></textarea>
+          </p>
+          <fieldset>
+            <legend>Best Contact Time</legend>
             <p>
-                Application Developer
+              <label for="contacttime01">Morning</label>
+              <input type="radio" name="contacttime" id="contacttime01" />
             </p>
-            <dl>
-                <dt>Website</dt>
-                <dd>devbygabe.me</dd>
-                <dt>Twitter</dt>
-                <dd><a href="https://www.twitter.com" target="_blank">@gabewalt</a></dd>
-            </dl>
-        </section>
-
-        <article id="about-me">
-            <header>
-                <h2>About Me</h2>
-            </header>
             <p>
-                Hi! I'm Gabriel. I'm a Manchester based developer. 
-                I'm <em>happy</em> to have you on my portfolio page.
-                Why don't you stick around and take a look at my projects?
+              <label for="contacttime02">Afternoon</label>
+              <input type="radio" name="contacttime" id="contacttime02" />
             </p>
-            <footer>
-                Contact me
-                <!-- TODO: add form -->
-            </footer>
-        </article>
-
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>Front-end Development</li>
-                <li>Code Optimisations</li>
-                <li>Bug Fixes</li>
-                <li>Web Design</li>
-            </ul>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HMTL</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Figma</li>
-            </ul>
-        </section>
-
-        <section id="work-history">
-            <h2>Work History</h2>
-            <table>
-                <thead>
-                    <th>Role</th>
-                    <th>Company</th>
-                    <th>Years</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>QA Team (secondment)</td>
-                        <td>Paragon CC</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Print Developer</td>
-                        <td>Paragon CC</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>HR Systems Analyst</td>
-                        <td>Marks &amp; Spencer</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">Total </td>
-                        <td>9</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-
-        <section id="projects">
-            <!-- TODO: add images -->
-            <h2>Projects</h2>
-        </section>
-
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <blockquote>
-                <p>I <strong>love</strong> Gabriel's work!</p>
-            </blockquote>
-            <p>- Customer #1</p>
-            <blockquote>
-                <p>Gabriel's work <strong>helped</strong> us greatly.</p>
-            </blockquote>
-            <p>- Customer #2</p>
-        </section>
-
-        <section id="mailing-address">
-            <h2>Mailing Address</h2>
-            <address>
-                Some St,<br>
-                Somewhere,<br>
-                Salford M6
-            </address>
-        </section>
-
+            <p>
+              <label for="contacttime03">Morning</label>
+              <input type="radio" name="contacttime" id="contacttime03" />
+            </p>
+            <p>
+              <label for="urgent">Urgent</label>
+              <input type="checkbox" name="urgent" id="urgent" />
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
